@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-green-200">
+    <main class=" w-3/4 h-[400px] mx-auto mt-24 bg-emerald-500 p-30 rounded">
+
+        <h1 class="text-center font-bold text-3xl my-2 py-6">Text Editor </h1>
+
+        <section class="border-2 border-zinc-800  bg-teal-400">
+            <div class="font-section grid grid-cols-3 gap-4 gap-4  border-b-[2px] border-zinc-800 m-6">
+                <div class="bolder ml-4 mt-3 ">
+                    <span id="bold" class="hover:bg-purple-300 p-1 rounded-full  ml-4 cursor-pointer"><i class="fa fa-bold"></i></span>
+                    <span id="italic" class="hover:bg-purple-300 p-1 ml-4 cursor-pointer"><i class="fa fa-italic"></i></span>
+                    <span id="text-decoration" class="hover:bg-purple-300 p-1 ml-4 cursor-pointer"><i class="fa fa-underline"></i></span>
+                </div>
+                <div class="bolder mx-auto  mt-3">
+                    <span id="text-left-align" class="hover:bg-purple-300 p-1 ml-4 cursor-pointer"><i class="fa fa-align-left"></i></span>
+                    <span id="text-center-align" class="hover:bg-purple-300 p-1 ml-4 cursor-pointer"><i class="fa fa-align-center"></i></span>
+                    <span id="text-right-align" class="hover:bg-purple-300 p-1 ml-4 cursor-pointer"><i class="fa fa-align-right"></i></span>
+                </div>
+                <div class="bolder text-right  mt-3 mr-4">
+                    <input id="font-size" class="w-8 h-5 mr-4 bg-yellow-400 " placeholder="20" type="number" name="" value="14">
+                    <input id="text-color" class="w-6 bg-red-400  rounded-full border-none" type="color"value="#ff4d4d" />
+                </div>
+            </div>
+
+            <div class=" w-full text-center ">
+                <span><textarea class="w-11/12 h-32"  name="" id="textField"  cols="100" rows="10"></textarea></span>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="js/textEditor.js"></script>
+</body>
+
+</html>
